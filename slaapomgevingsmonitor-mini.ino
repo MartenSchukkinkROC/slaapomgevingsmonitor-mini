@@ -1,4 +1,4 @@
-#define TEMP_PIN A1
+#define TEMP_PIN A0
 
 void  setup()
 {
@@ -15,8 +15,8 @@ void loop()
   double voltage = sensorInput / 1024.0 * 5.0;  // Omzetten naar voltage
   double temperature = (voltage - 0.5) * 100;   // Omzetten naar temperatuur
 
-  Serial.print("curTemp:");
-  Serial.println(curTemperature, 2);
+  Serial.print("Temperature:");
+  Serial.println(temperature, 2);
 
   delay(1000);
 }
