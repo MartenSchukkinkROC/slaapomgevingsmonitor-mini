@@ -10,6 +10,7 @@ Het maken van deze slaapomgevingsmonitor Mini wordt uitgelegd in de volgende fil
 
 - [Filmpje 1: Introductie: het project]()
   - Hierin worden de basis beginselen uitgelegd van elektronica en de Arduino
+  - [Programma](https://docs.arduino.cc/built-in-examples/basics/Blink/) om ingebouwde LED te laten knipperen
 - [Filmpje 2: Temperatuur meten]()
   - [Schema](documentation/electrical-diagram-step-1.png) 
   - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-1/slaapomgevingsmonitor-mini.ino)
