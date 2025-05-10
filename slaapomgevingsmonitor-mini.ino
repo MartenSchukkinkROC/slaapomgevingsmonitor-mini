@@ -7,7 +7,6 @@ void  setup()
   pinMode(LIGHT_PIN, INPUT);
 
   Serial.begin(9600);
-  Serial.println("Initialising...");
 }
 
 void loop()
