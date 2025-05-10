@@ -33,11 +33,17 @@ Het elektrische schema van het eindresultaat ziet er als volgt uit:
 
 ![Electical diagram](documentation/electrical-diagram-step-3.png)
 
-In de filmpjes wordt dit schema in drie stappen gebouwd:
+In de filmpjes wordt het project in drie stappen gebouwd:
 
-- In filmpje 2: [Stap 1 - temperatuur sensor](documentation/electrical-diagram-step-1.png) 
-- In filmpje 3: [Stap 2 - fotogevoelige weerstand](documentation/electrical-diagram-step-2.png)
-- In filmpje 4: [Stap 3 - servo's](documentation/electrical-diagram-step-3.png)
+- In filmpje 2: temperatuursensor
+  - [Schema](documentation/electrical-diagram-step-1.png) 
+  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-1/slaapomgevingsmonitor-mini.ino)
+- In filmpje 3: fotogevoelige weerstand
+  - [Schema](documentation/electrical-diagram-step-2.png)
+  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-2/slaapomgevingsmonitor-mini.ino)
+- In filmpje 4: servo's 
+  - [Schema](documentation/electrical-diagram-step-3.png)
+  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/main/slaapomgevingsmonitor-mini.ino)
 
 ## Template
 Het template voor de figuur kun je [via deze pagina](documentation/template.pdf) downloaden. Klik op de pagina op de downloadlink om het in pdf-formaat te downloaden. Deze kun je uitprinten en op een stuk stevig karton of houten plaat plakken. De blauwe cirkels moeten geboord worden met een boor van 15mm. Hier komen straks de servo's in. De duimpjes moet je netjes uitknippen, deze worden op de armen van de servo's geplakt.

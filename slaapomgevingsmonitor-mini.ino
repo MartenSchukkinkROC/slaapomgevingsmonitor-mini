@@ -1,62 +1,59 @@
 #include <Servo.h>
 
-#define LIGHT_PIN A0
-#define TEMP_PIN A1
+#define TEMP_PIN A0
+#define LIGHT_PIN A1
 
-#define THUMB_UP 2400
-#define THUMB_DOWN 600
+#define THUMB_UP 180  // Aantal graden voor duim omhoog
+#define THUMB_DOWN 0  // Aantal graden voor duim omlaag
 
-#define LIGHT_MAX 10.0
-#define TEMP_MAX 23.0
+#define LIGHT_MAX 20.0  // Maximaal toegestane lichthoeveelheid
+#define TEMP_MAX 23.0   // Maximaal toegestane temperatuur
 
-Servo servo_light;
-Servo servo_temp;
-
-double curLight;
-double curTemperature;
+Servo servoTemperature;
+Servo servoLight;
 
 void  setup()
 {
-  Serial.begin(9600);
-  Serial.println("Initialising...");
-  pinMode(LIGHT_PIN, INPUT);
   pinMode(TEMP_PIN, INPUT);
-  servo_light.attach(9);
-  servo_temp.attach(10);
+  pinMode(LIGHT_PIN, INPUT);
+
+  servoTemperature.attach(9);
+  servoLight.attach(10);
+
+  Serial.begin(9600);
 }
 
 void loop()
 {
-  // 1) Licht
-  curLight = analogRead(LIGHT_PIN) / 1024.0 * 100.0; // 0..1023 converted to percentage
-
-  if (curLight <= LIGHT_MAX) {
-    servo_light.writeMicroseconds(THUMB_UP);
-  }
-  else {
-    servo_light.writeMicroseconds(THUMB_DOWN);
-  }
-
-  Serial.print("curLight:");
-  Serial.println(curLight, 2);
-
   // Temperatuur
-  int sensorInput = analogRead(TEMP_PIN);
+  int sensorInputTemp = analogRead(TEMP_PIN);       // Uitgelezen waarde tussen 0 en 1023
+  double voltage = sensorInputTemp / 1024.0 * 5.0;  // Omzetten naar voltage
+  double temperature = (voltage - 0.5) * 100;       // Omzetten naar temperatuur
 
-  curTemperature = (double)sensorInput / 1024; //find percentage of input reading
-  curTemperature = curTemperature * 5; //multiply by 5V to get voltage
-  curTemperature = curTemperature - 0.5; //Subtract the offset
-  curTemperature = curTemperature * 100; //Convert to degrees
-
-  if (curTemperature <= TEMP_MAX) {
-    servo_temp.writeMicroseconds(THUMB_UP);
+  if (temperature <= TEMP_MAX) {
+    servoTemperature.write(THUMB_UP);
   }
   else {
-    servo_temp.writeMicroseconds(THUMB_DOWN);
+    servoTemperature.write(THUMB_DOWN);
   }
 
-  Serial.print("curTemp:");
-  Serial.println(curTemperature, 2);
+  Serial.print("Temperatuur:");
+  Serial.println(temperature, 2);
+
+  // Licht
+  int sensorInputLight = analogRead(LIGHT_PIN);     // Uitgelezen waarde tussen 0 en 1023
+  double light = sensorInputLight / 1024.0 * 100.0; // Omzetten naar percentage
+
+  Serial.print("Licht:");
+  Serial.println(light, 2);
+
+  if (light <= LIGHT_MAX) {
+    servoLight.write(THUMB_UP);
+  }
+  else {
+    servoLight.write(THUMB_DOWN);
+  }
 
   delay(1000);
 }
+
