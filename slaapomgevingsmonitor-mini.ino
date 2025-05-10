@@ -1,7 +1,7 @@
-#include <Servo.h>  // Standaard lib
+#include <Servo.h>
 
-#define LIGHT_PIN A0  // analog
-#define TEMP_PIN A1  // analog
+#define LIGHT_PIN A0
+#define TEMP_PIN A1
 
 #define THUMB_UP 2400
 #define THUMB_DOWN 600

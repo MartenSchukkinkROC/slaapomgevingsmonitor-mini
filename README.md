@@ -25,7 +25,7 @@ Het maken van deze slaapomgevingsmonitor Mini wordt uitgelegd in de volgende fil
 - 2x3 Male header pins
 - Jumper wires
 - Stevig stuk karton of hout van ongeveer A4-formaat
-- [Template](documentation/template.pdf) om uit te printen
+- Template om uit te printen (zie hieronder)
 
 ## Elektrisch schema
 
@@ -40,7 +40,7 @@ In de filmpjes wordt dit schema in drie stappen gebouwd:
 - In filmpje 4: [Stap 3 - servo's](documentation/electrical-diagram-step-3.png)
 
 ## Template
-Het template voor de figuur kun je [via deze link](documentation/template.pdf) downloaden. Deze kun je uitprinten en op een stuk stevig karton of hout plakken. De duimpjes moet je netjes uitknippen, deze worden op de armen van de servo's geplakt.
+Het template voor de figuur kun je [via deze pagina](documentation/template.pdf) downloaden. Klik op de pagina op de downloadlink om het in pdf-formaat te downloaden. Deze kun je uitprinten en op een stuk stevig karton of houten plaat plakken. De blauwe cirkels moeten geboord worden met een boor van 15mm. Hier komen straks de servo's in. De duimpjes moet je netjes uitknippen, deze worden op de armen van de servo's geplakt.
 
 ## Meer informatie over gebruikte componenten
 Hieronder vindt je extra links voor dit project. Bijvoorbeeld van de verschillende componenten die worden gebruikt. Hier kun extra informatie vinden over de componenten. Misschien doe je wel leuke nieuwe ideeen op!
