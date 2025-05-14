@@ -44,15 +44,15 @@ void loop()
   int sensorInputLight = analogRead(LIGHT_PIN);     // Uitgelezen waarde tussen 0 en 1023
   double light = sensorInputLight / 1024.0 * 100.0; // Omzetten naar percentage
 
-  Serial.print("Licht:");
-  Serial.println(light, 2);
-
   if (light <= LIGHT_MAX) {
     servoLight.write(THUMB_UP);
   }
   else {
     servoLight.write(THUMB_DOWN);
   }
+
+  Serial.print("Licht:");
+  Serial.println(light, 2);
 
   delay(1000);
 }
