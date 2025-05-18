@@ -9,10 +9,12 @@ De Slaapongevingsmonitor Mini meet de temperatuur en de hoeveelheid licht in de 
 Het maken van deze slaapomgevingsmonitor Mini wordt uitgelegd in de volgende filmpjes:
 
 ### [Filmpje 1](): Introductie van het project
-- Hierin worden de basis beginselen uitgelegd van elektronica en de Arduino
+Hierin worden de basis beginselen uitgelegd van elektronica en de Arduino
   
 - [Programma](https://docs.arduino.cc/built-in-examples/basics/Blink/) om ingebouwde LED te laten knipperen
 ### [Filmpje 2](): Temperatuur meten
+
+In dit filmpje maak je het circuit en het programma om temperatuur te meten
 
 - Elektronisch schema
 
@@ -20,12 +22,16 @@ Het maken van deze slaapomgevingsmonitor Mini wordt uitgelegd in de volgende fil
 
 - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-1/slaapomgevingsmonitor-mini.ino) bij het schema
 ### [Filmpje 3](): Licht meten
+In dit filmpje maak je het circuit en het programma om de hoeveelheid licht te meten
+
 - Elektronisch schema
 
   ![Schema](documentation/electrical-diagram-step-2.png)
 
 - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-2/slaapomgevingsmonitor-mini.ino) bij het schema
 ### [Filmpje 4](): Servo's gebruiken
+In dit filmpje maak je het circuit en het programma om twee servo's aan te sturen op basis van de gemeten temperatuur en hoeveelheid licht.
+
 - Elektronisch schema
 
   ![Schema](documentation/electrical-diagram-step-3.png)
