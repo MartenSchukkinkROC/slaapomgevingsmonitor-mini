@@ -8,39 +8,49 @@ De Slaapongevingsmonitor Mini meet de temperatuur en de hoeveelheid licht in de 
 
 Het maken van deze slaapomgevingsmonitor Mini wordt uitgelegd in de volgende filmpjes:
 
-- [Filmpje 1: Introductie: het project]()
-  - Hierin worden de basis beginselen uitgelegd van elektronica en de Arduino
-  - [Programma](https://docs.arduino.cc/built-in-examples/basics/Blink/) om ingebouwde LED te laten knipperen
-- [Filmpje 2: Temperatuur meten]()
-  - [Schema](documentation/electrical-diagram-step-1.png) 
-  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-1/slaapomgevingsmonitor-mini.ino)
-- [Filmpje 3: Licht meten]()
-  - [Schema](documentation/electrical-diagram-step-2.png)
-  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-2/slaapomgevingsmonitor-mini.ino)
-- [Filmpje 4: Servo's gebruiken]()
-  - [Schema](documentation/electrical-diagram-step-3.png)
-  - [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/main/slaapomgevingsmonitor-mini.ino)
+### [Filmpje 1](): Introductie van het project
+- Hierin worden de basis beginselen uitgelegd van elektronica en de Arduino
+  
+- [Programma](https://docs.arduino.cc/built-in-examples/basics/Blink/) om ingebouwde LED te laten knipperen
+### [Filmpje 2](): Temperatuur meten
+
+- Elektronisch schema
+
+  ![Schema](documentation/electrical-diagram-step-1.png)
+
+- [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-1/slaapomgevingsmonitor-mini.ino) bij het schema
+### [Filmpje 3](): Licht meten
+- Elektronisch schema
+
+  ![Schema](documentation/electrical-diagram-step-2.png)
+
+- [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/step-2/slaapomgevingsmonitor-mini.ino) bij het schema
+### [Filmpje 4](): Servo's gebruiken
+- Elektronisch schema
+
+  ![Schema](documentation/electrical-diagram-step-3.png)
+
+- [Programma](https://github.com/MartenSchukkinkROC/slaapomgevingsmonitor-mini/blob/main/slaapomgevingsmonitor-mini.ino) bij het schema
 
 ## Gebruikte onderdelen
-
+Algemeen
 - Arduino Uno R3 (met USB-kabel)
 - Breadboard
+- Jumper wires
+
+Fimpje 2
 - TMP36 temperatuursensor
+
+Filmpje 3
 - Fotogevoelige weestand (Photoresistor, Light Dependent Resistor, LDR)
 - Weerstand van 10 kΩ (bruin-zwart-oranje-goud)
+
+Filmpje 4
 - 2 Servo motoren
 - 2 Condesatoren van 100 µF
 - 2x3 Male header pins
-- Jumper wires
-- Stevig stuk karton of hout van ongeveer A4-formaat
+- A4 Kaarthouder of een stevig stuk karton of hout van ongeveer A4-formaat
 - Template om uit te printen (zie hieronder)
-
-## Elektrisch schema
-
-Het elektrische schema van het eindresultaat ziet er als volgt uit:
-
-![Electical diagram](documentation/electrical-diagram-step-3.png)
-
 
 ## Template
 Het template voor de figuur kun je [via deze pagina](documentation/template.pdf) downloaden. Klik op de pagina op de downloadlink om het in pdf-formaat te downloaden. Deze kun je uitprinten en op een stuk stevig karton of houten plaat plakken. De blauwe cirkels moeten geboord worden met een boor van 15mm. Hier komen straks de servo's in. De duimpjes moet je netjes uitknippen, deze worden op de armen van de servo's geplakt.
